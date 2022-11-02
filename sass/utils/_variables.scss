@@ -1,0 +1,25 @@
+:root {
+  --primery-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-text-color: #2196f3;
+  --primery-white-color: #ffffff;
+  --primery-black-color: #000000;
+  --bg-footer-color: #2f303a;
+  --bg-our-team: #f5f4fa;
+  --address-footer: rgba(255, 255, 255, 0.6);
+  --button-color: #188ce8;
+  --button-bcg-color: #f5f4fa;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}

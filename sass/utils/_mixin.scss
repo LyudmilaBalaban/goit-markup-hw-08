@@ -1,0 +1,9 @@
+@mixin sections-title($fw, $fs, $lh, $ta, $ls, $c, $mb) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  text-align: $ta;
+  letter-spacing: $ls;
+  color: $c;
+  margin-bottom: $mb;
+}

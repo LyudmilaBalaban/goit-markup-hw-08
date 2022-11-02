@@ -1,0 +1,61 @@
+.work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.work-list {
+  position: relative;
+  display: flex;
+  padding-left: 0;
+
+  &.item {
+    max-width: 370px;
+  }
+}
+
+.work-list .work-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.activity-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.activity-2 {
+  position: absolute;
+  bottom: 0;
+  left: 400px;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.activity-3 {
+  position: absolute;
+  bottom: 0;
+  left: 800px;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.activity-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primery-white-color);
+}
