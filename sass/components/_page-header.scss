@@ -45,6 +45,10 @@
   }
 }
 
+.site-nav__item {
+  display: none;
+}
+
 .current::after {
   content: "";
   position: absolute;
@@ -86,6 +90,10 @@
   &__item:not(:last-child) {
     margin-right: 50px;
   }
+}
+
+.contacts-list__item {
+  display: none;
 }
 
 .mail-soc-icon {

@@ -1,12 +1,29 @@
 .clients {
   background-color: var(--primery-white-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.clients__title {
+  font-size: 28px;
+  line-height: 1.17;
+  margin-bottom: 17px;
+  @include tablet {
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
   display: flex;
-
+  flex-wrap: wrap;
   gap: 30px;
   align-items: center;
   justify-content: center;
@@ -15,6 +32,14 @@
 .clients__item {
   width: 170px;
   height: 92px;
+  width: calc((100% - 30px) / 2);
+
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+  }
+  @include desktop {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {

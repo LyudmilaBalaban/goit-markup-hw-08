@@ -1,7 +1,9 @@
 @import "./utils/variables";
+@import "./utils/breakpoints";
 @import "./base/reset";
 @import "./base/common";
 @import "./utils/mixin";
+
 @import "./components/page-header";
 @import "./components/logo";
 @import "./components/hero";

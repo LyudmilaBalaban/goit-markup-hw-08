@@ -14,7 +14,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    
   </head>
   <body>
     <header class="page-header">
@@ -137,6 +136,7 @@
           <ul class="work-list">
             <li class="work-item list">
               <img
+                srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x"
                 src="./images/img.jpg"
                 alt="Людина набирає текст на клавіатурі"
                 width="370"
@@ -147,6 +147,7 @@
             </li>
             <li class="work-item list">
               <img
+                srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="Людина працює на ноутбуці"
                 width="370"
@@ -157,6 +158,7 @@
             </li>
             <li class="work-item list">
               <img
+                srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="Людина працює на планшеті з кольоровою палітрою"
                 width="370"
@@ -173,8 +175,27 @@
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
-            <li class="list bcg">
-              <img src="./images/man.jpg" alt="Ігор Дем'яненко" width="270" />
+            <li class="list team-item">
+              <picture>
+                <source
+                  srcset="./images/man-desk.jpg 1x, ./images/man-desk@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/man-tab.jpg 1x, ./images/man-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/man-mob.jpg 1x, ./images/man-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/man-desk.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-box">
                 <h3 class="subtitle-team">Ігор Дем'яненко</h3>
                 <p lang="en" class="text">Product Designer</p>
@@ -216,8 +237,36 @@
                 </ul>
               </div>
             </li>
-            <li class="list bcg">
-              <img src="./images/woman.jpg" alt="Ольга Рєпіна" width="270" />
+            <li class="list team-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/woman-desk.jpg    1x,
+                    ./images/woman-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/woman-tab.jpg    1x,
+                    ./images/woman-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/woman-mob.jpg    1x,
+                    ./images/woman-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/woman-desk.jpg"
+                  alt="Ольга Рєпіна"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-box">
                 <h3 class="subtitle-team">Ольга Рєпіна</h3>
                 <p lang="en" class="text">Frontend Developer</p>
@@ -259,8 +308,30 @@
                 </ul>
               </div>
             </li>
-            <li class="list bcg">
-              <img src="./images/man1.jpg" alt="Микола Тарасов" width="270" />
+            <li class="list team-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/man1-desk.jpg    1x,
+                    ./images/man1-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/man1-tab.jpg 1x, ./images/man1-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/man1-mob.jpg 1x, ./images/man1-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/man1-desk.jpg"
+                  alt="Микола Тарасов"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-box">
                 <h3 class="subtitle-team">Микола Тарасов</h3>
                 <p lang="en" class="text">Marketing</p>
@@ -302,8 +373,30 @@
                 </ul>
               </div>
             </li>
-            <li class="list bcg">
-              <img src="./images/man2.jpg" alt="Михайло Єрмаков" width="270" />
+            <li class="list team-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/man2-desk.jpg    1x,
+                    ./images/man2-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/man2-tab.jpg 1x, ./images/man2-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/man2-mob.jpg 1x, ./images/man2-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/man2-desk.jpg"
+                  alt="Михайло Єрмаков"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-box">
                 <h3 class="subtitle-team">Михайло Єрмаков</h3>
                 <p lang="en" class="text">UI Designer</p>
@@ -400,7 +493,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-thumb">
         <div class="address-thumb">
           <a href="./index.html" class="logo-footer link"
@@ -482,7 +575,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close type="button" class="btn-close">
