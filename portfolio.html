@@ -63,6 +63,80 @@
             </li>
           </ul>
         </div>
+        <button type="button" class="menu-btn" data-menu-open>
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use
+              class="icon-menu-btn"
+              href="./images/icons.svg#icon-menu-btn"
+            ></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="close-menu-btn" data-menu-close>
+              <svg width="40" height="40">
+                <use
+                  class="icon-close-menu-btn"
+                  href="./images/symbol-defs.svg#icon-close"
+                ></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-nav list">
+              <li class="mob-menu-nav__item">
+                <a class="mob-menu-nav__link link" href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="mob-menu-nav__item">
+                <a
+                  class="mob-menu-nav__link link current"
+                  href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mob-menu-nav__item">
+                <a class="mob-menu-nav__link link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="contacts-mob-menu list">
+              <li class="contacts-mob-menu__item">
+                <a href="tel:+380961111111" class="contacts-mob-tel__link link">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="contacts-mob-menu__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts-mob__link link"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">Instagram</a>
+                <span class="line"></span>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">Twitter</a
+                ><span class="line"></span>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">Facebook</a
+                ><span class="line"></span>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -93,12 +167,36 @@
             <li class="item">
               <a class="card-link link" href="#">
                 <div class="project-thumb">
-                  <img
-                    src="./images/project1-desk.jpg"
-                    alt="Екран ноутбука з відкритим сайтом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project1-desk.jpg    1x,
+                        ./images/project1-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project1-tab.jpg    1x,
+                        ./images/project1-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project1-mob.jpg    1x,
+                        ./images/project1-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/project1-desk.jpg"
+                      alt="Екран ноутбука з відкритим сайтом"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="text-overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -108,19 +206,42 @@
 
                 <div class="card-title">
                   <h2 class="portfolio-title">Технокряк</h2>
-                  <p class="portfolio-text">Веб-сайт</p>
+                  <p class="portfolio-text web-subtitle">Веб-сайт</p>
                 </div>
               </a>
             </li>
             <li class="item">
               <a class="card-link link" href="#">
                 <div class="project-thumb">
-                  <img
-                    src="./images/project2-desk.jpg"
-                    alt="Двоє баскетболістів підстрибують з м`ячем"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project2-desk.jpg    1x,
+                        ./images/project2-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project2-tab.jpg    1x,
+                        ./images/project2-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project2-mob.jpg    1x,
+                        ./images/project2-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/project2-desk.jpg"
+                      alt="Екран ноутбука з відкритим сайтом"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="text-overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -138,12 +259,35 @@
             <li class="item">
               <a class="card-link link" href="#">
                 <div class="project-thumb">
-                  <img
-                    src="./images/project3-desk.jpg"
-                    alt="Логотип ресторану морської кухні"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project3-desk.jpg    1x,
+                        ./images/project3-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project3-tab.jpg    1x,
+                        ./images/project3-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project3-mob.jpg    1x,
+                        ./images/project3-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/project3-desk.jpg"
+                      alt="Екран ноутбука з відкритим сайтом"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="text-overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -161,12 +305,35 @@
             <li class="item">
               <a class="card-link link" href="#">
                 <div class="project-thumb">
-                  <img
-                    src="./images/project4-desk.jpg"
-                    alt="Безпровідні навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project4-desk.jpg    1x,
+                        ./images/project1-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project4-tab.jpg    1x,
+                        ./images/project4-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project4-mob.jpg    1x,
+                        ./images/project4-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/project4-desk.jpg"
+                      alt="Екран ноутбука з відкритим сайтом"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="text-overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -184,12 +351,35 @@
             <li class="item">
               <a class="card-link link" href="#">
                 <div class="project-thumb">
-                  <img
-                    src="./images/project5-desk.jpg"
-                    alt="Дві коробки більша білого кольору а менша бежевого"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project5-desk.jpg    1x,
+                        ./images/project5-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project5-tab.jpg    1x,
+                        ./images/project5-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project5-mob.jpg    1x,
+                        ./images/project5-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/project5-desk.jpg"
+                      alt="Екран ноутбука з відкритим сайтом"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="text-overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -207,12 +397,35 @@
             <li class="item">
               <a class="card-link link" href="#">
                 <div class="project-thumb">
-                  <img
-                    src="./images/project6-desk.jpg"
-                    alt="Монітор макбука з інфографікою"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project6-desk.jpg    1x,
+                        ./images/project6-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project6-tab.jpg    1x,
+                        ./images/project6-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project6-mob.jpg    1x,
+                        ./images/project6-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/project6-desk.jpg"
+                      alt="Екран ноутбука з відкритим сайтом"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="text-overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -230,12 +443,35 @@
             <li class="item">
               <a class="card-link link" href="#">
                 <div class="project-thumb">
-                  <img
-                    src="./images/project7-desk.jpg"
-                    alt="Відкритий журнал з фотографіями та стильною типографікою"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project7-desk.jpg    1x,
+                        ./images/project7-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project7-tab.jpg    1x,
+                        ./images/project7-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project7-mob.jpg    1x,
+                        ./images/project7-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/project7-desk.jpg"
+                      alt="Екран ноутбука з відкритим сайтом"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="text-overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -254,12 +490,35 @@
             <li class="item">
               <a class="card-link link" href="#">
                 <div class="project-thumb">
-                  <img
-                    src="./images/project8-desk.jpg"
-                    alt="Біла етикетка з написом прямокутної форми на шнурку"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project8-desk.jpg    1x,
+                        ./images/project8-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project8-tab.jpg    1x,
+                        ./images/project8-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project8-mob.jpg    1x,
+                        ./images/project8-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/project8-desk.jpg"
+                      alt="Екран ноутбука з відкритим сайтом"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="text-overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -277,12 +536,35 @@
             <li class="item">
               <a class="card-link link" href="#">
                 <div class="project-thumb">
-                  <img
-                    src="./images/project9-desk.jpg"
-                    alt="Пальці людини набирають на ноутбуці текст"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project9-desk.jpg    1x,
+                        ./images/project9-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project9-tab.jpg    1x,
+                        ./images/project9-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project9-mob.jpg    1x,
+                        ./images/project9-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/project9-desk.jpg"
+                      alt="Екран ноутбука з відкритим сайтом"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="text-overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -302,66 +584,69 @@
 
     <footer class="footer">
       <div class="container footer-thumb">
-        <div class="address-thumb">
-          <a href="./index.html" class="logo-footer link"
-            >Web<span class="studio">Studio</span></a
-          >
-          <address>
-            <ul class="menu-list">
-              <li class="list item">
-                <a
-                  class="address-link"
-                  href="https://goo.gl/maps/z2QzcaadqmwXCN8d9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  м. Київ, пр-т Лесі Українки, 26
+        <div class="footer-thumb-tablet">
+          <div class="address-thumb">
+            <a href="./index.html" class="logo-footer link"
+              >Web<span class="studio">Studio</span></a
+            >
+            <address>
+              <ul class="menu-list">
+                <li class="list item">
+                  <a
+                    class="address-link"
+                    href="https://goo.gl/maps/z2QzcaadqmwXCN8d9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="list item">
+                  <a class="link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="list item">
+                  <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-thumb">
+            <p class="footer-text">приєднуйтесь</p>
+            <ul class="footer-soc-list list">
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="list item">
-                <a class="link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="list item">
-                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="social-thumb">
-          <p class="footer-text">приєднуйтесь</p>
-          <ul class="footer-soc-list list">
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link"
-                ><svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link"
-                ><svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link"
-                ><svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link"
-                ><svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="mailing-list-thumb">
           <p class="footer-text">Підпишіться на розсилку</p>
           <form class="form-footer">
@@ -383,5 +668,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

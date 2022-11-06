@@ -38,7 +38,13 @@
 .footer-soc-list {
   display: flex;
   gap: 10px;
-  margin-top: 20px;
+  @include mobile {
+    margin-top: 0;
+  }
+
+  @include tablet {
+    margin-top: 0;
+  }
 }
 
 .footer-soc-item {

@@ -4,17 +4,29 @@
   background-color: var(--bg-footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  @include tablet {
+    padding-top: 60px;
+  }
+}
+
+.menu-list {
+  @include desktop {
+    padding-left: 0;
+
+    &.link {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+  }
 }
 
 .menu-list {
   padding-left: 0;
-  & .item:not(:last-child) {
-    margin-bottom: 9px;
-  }
-  &.link {
-    font-size: 14px;
-    line-height: 1.71;
-  }
+}
+
+.menu-list .link {
+  font-style: 14px;
+  line-height: 1.71;
 }
 
 address .link {
@@ -42,16 +54,62 @@ address .link {
   }
 }
 
-.footer-thumb {
+.menu-list {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+  }
+
+  gap: 8px;
+}
+
+.footer-thumb {
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 .address-thumb {
-  margin-right: 70px;
+  @media screen and (min-width: 1199px) {
+    margin-right: 70px;
+  }
+}
+
+.footer-thumb-tablet {
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+
+.social-thumb {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 20px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+  @include desktop {
+    align-items: flex-start;
+  }
 }
 
 .footer-text {
+  @include desktop {
+    text-align: start;
+  }
+  text-align: center;
   color: var(--primery-white-color);
   font-weight: 700;
   font-size: 14px;
@@ -60,10 +118,25 @@ address .link {
   text-transform: uppercase;
 }
 
+.footer-text {
+  @include desktop {
+    color: var(--primery-white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}
+
 .footer-input {
   background-color: var(--bg-footer-color);
   margin-top: 20px;
-  width: 358px;
+  @include desktop {
+    width: 358px;
+  }
+
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -89,10 +162,29 @@ address .link {
 
 .form-footer-thumb {
   display: flex;
-  align-items: flex-end;
-  gap: 12px;
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+  }
+
+  align-items: center;
+  gap: 20px;
+}
+
+.form-footer-thumb {
+  @include desktop {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+  }
 }
 
 .mailing-list-thumb {
-  margin-left: 93px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+
+  @include desktop {
+    margin-top: 0;
+    margin-left: 93px;
+  }
 }

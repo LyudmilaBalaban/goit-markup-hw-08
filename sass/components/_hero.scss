@@ -44,7 +44,7 @@
 
   @include desktop {
     & {
-      max-width: 1200px;
+      max-width: 1600px;
       background-image: var(--bcg-hero-gradient),
         url(../images/hero-bcg-desktop.jpg);
       @include retina {
@@ -73,7 +73,7 @@
     width: 360px;
   }
   @include desktop {
-    max-width: 696px;
+    width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }

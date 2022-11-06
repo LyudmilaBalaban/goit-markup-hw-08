@@ -47,22 +47,22 @@
 
 .team-item {
   width: 100%;
+  background: var(--primery-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   @include tablet {
     width: calc((100% - 30px) / 2);
   }
   @include desktop {
     width: calc((100% - 90px) / 4);
-  }
+    width: 270px;
+    height: 428px;
+    left: 215px;
+    top: 1632px;
 
-  // width: 270px;
-  // height: 428px;
-  // left: 215px;
-  // top: 1632px;
-  background: var(--primery-white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  // .team-list &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+    // .team-list &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
+  }
 }

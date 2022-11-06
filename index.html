@@ -64,6 +64,78 @@
             </li>
           </ul>
         </div>
+        <button type="button" class="menu-btn" data-menu-open>
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use
+              class="icon-menu-btn"
+              href="./images/icons.svg#icon-menu-btn"
+            ></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="close-menu-btn" data-menu-close>
+              <svg width="40" height="40">
+                <use
+                  class="icon-close-menu-btn"
+                  href="./images/symbol-defs.svg#icon-close"
+                ></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-nav list">
+              <li class="mob-menu-nav__item">
+                <a class="mob-menu-nav__link link current" href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="mob-menu-nav__item">
+                <a class="mob-menu-nav__link link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mob-menu-nav__item">
+                <a class="mob-menu-nav__link link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="contacts-mob-menu list">
+              <li class="contacts-mob-menu__item">
+                <a href="tel:+380961111111" class="contacts-mob-tel__link link">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="contacts-mob-menu__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts-mob__link link"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">Instagram</a>
+                <span class="line"></span>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">Twitter</a
+                ><span class="line"></span>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">Facebook</a
+                ><span class="line"></span>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -493,68 +565,71 @@
       </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-thumb">
-        <div class="address-thumb">
-          <a href="./index.html" class="logo-footer link"
-            >Web<span class="studio">Studio</span></a
-          >
-          <address>
-            <ul class="menu-list">
-              <li class="list item">
-                <a
-                  class="address-link"
-                  href="https://goo.gl/maps/z2QzcaadqmwXCN8d9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  м. Київ, пр-т Лесі Українки, 26
+        <div class="footer-thumb-tablet">
+          <div class="address-thumb">
+            <a href="./index.html" class="logo-footer link"
+              >Web<span class="studio">Studio</span></a
+            >
+            <address>
+              <ul class="menu-list">
+                <li class="list item">
+                  <a
+                    class="address-link"
+                    href="https://goo.gl/maps/z2QzcaadqmwXCN8d9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="list item">
+                  <a class="link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="list item">
+                  <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-thumb">
+            <p class="footer-text">приєднуйтесь</p>
+            <ul class="footer-soc-list list">
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="list item">
-                <a class="link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="list item">
-                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="social-thumb">
-          <p class="footer-text">приєднуйтесь</p>
-          <ul class="footer-soc-list list">
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link"
-                ><svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link"
-                ><svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link"
-                ><svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link"
-                ><svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="mailing-list-thumb">
           <p class="footer-text">Підпишіться на розсилку</p>
           <form class="form-footer">
@@ -575,7 +650,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close type="button" class="btn-close">
@@ -656,5 +731,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
