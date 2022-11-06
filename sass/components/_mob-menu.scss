@@ -1,10 +1,10 @@
 .menu-btn {
-  display: inline-flex;
-  margin-left: auto;
+  position: absolute;
+  top: 25%;
+  right: 15px;
   padding: 0;
   bottom: none;
   background-color: transparent;
-  align-items: center;
 }
 
 @include tablet {
